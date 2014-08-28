@@ -1,14 +1,12 @@
-# A Virtual Machine for Ruby on Rails Core Development
+# A Virtual Machine for Ruby on Rails Development
 
 ## Introduction
 
-This project automates the setup of a development environment for working on Ruby on Rails itself. Use this virtual machine to work on a pull request with everything ready to hack and run the test suites.
-
-**Please note this virtual machine is not designed to be used for Rails application development.**
+This project automates the setup of a development environment for working on Ruby on Rails project..
 
 ## Requirements
 
-* [VirtualBox](https://www.virtualbox.org) or [VMWare Fusion](http://www.vmware.com/products/fusion) or [Parallels Desktop](http://www.parallels.com/products/desktop/)(need Vagrant 1.5+, see [vagrant-parallels](http://parallels.github.io/vagrant-parallels/docs/installation/index.html))
+* [VirtualBox](https://www.virtualbox.org) 
 
 * [Vagrant 1.1+](http://vagrantup.com) (not a Ruby gem)
 
@@ -27,7 +25,7 @@ If the base box is not present that command fetches it first. The setup itself t
     host $ vagrant ssh
     Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
     ...
-    vagrant@rails-dev-box:~$
+    vagrant@sparkway-rails-dev-box:~$
 
 Port 3000 in the host computer is forwarded to port 3000 in the virtual machine. Thus, applications running in the virtual machine can be accessed via localhost:3000 in the host computer.
 
@@ -113,4 +111,4 @@ Please check the [Vagrant documentation](http://docs.vagrantup.com/v2/) for more
 
 ## License
 
-Released under the MIT License, Copyright (c) 2012–<i>ω</i> Xavier Noria.
+Released under the MIT License, Copyright (c) 2014–<i>ω</i> Xavier Noria.

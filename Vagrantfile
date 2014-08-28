@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url   = 'http://files.vagrantup.com/precise64.box'
   config.vm.hostname = 'sparkway-rails-dev-box'
 
-  config.vm.network :forwarded_port, guest: 4002, host: 4003  
+  config.vm.network :forwarded_port, guest: 4002, host: 4003  # configure manually
 
   config.vm.provision :puppet,
     :manifests_path => 'puppet/manifests',
