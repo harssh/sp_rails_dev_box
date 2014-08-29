@@ -15,4 +15,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     :manifests_path => 'puppet/manifests',
     :module_path    => 'puppet/modules',
     :manifest_file  => 'default.pp'
+
+    config.vm.provision :shell, :path => "scripts/init.sh"
 end

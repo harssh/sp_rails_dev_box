@@ -125,10 +125,6 @@ package { 'nodejs':
   ensure => installed
 }
 
-#redis
-class redis-cl {
-  class { 'redis': }
-}
 
 # --- Ruby ---------------------------------------------------------------------
 
